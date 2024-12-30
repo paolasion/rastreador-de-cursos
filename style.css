@@ -1,0 +1,10 @@
+@media (max-width: 600px) {
+    .form-section {
+        width: 100%;
+    }
+
+    .results-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
