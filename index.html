@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Tracker</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #546e8f;
+        color: #964949;
+        font-family: Arial, sans-serif;
+      }
+
+      .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 150px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #c3c1ad;
+        margin-bottom: 20px;
+      }
+
+      .form-section {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .form-section input {
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        background-color: rgba(241, 241, 241, 0.945);
+        color: #000000;
+        transition: box-shadow 0.3s ease-in-out;
+      }
+
+      .form-section input:focus {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        outline: none;
+      }
+
+      .form-section button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #933c3c;
+        color: #FFF;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 106%;
+      }
+
+      .form-section button:hover {
+        background-color: #FF6347;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Verifique se o caminho está correto -->
+    <img src="src/images/logo.png" alt="Course Tracker Logo" class="logo">
+    <div class="container">
+      <h1>Crie sua conta ou faça login</h1>
+
+      <!-- Formulário de Criação de Conta / Login -->
+      <div class="form-section">
+        <form
+          action="https://docs.google.com/forms/d/e/1FAIpQLScOC4O1U4-G51UVhGBzpgGQkXuFvqE2HoAgDbOrUq9S-VRHUQ/viewform?usp=sharing"
+          method="POST"
+          onsubmit="window.location.href='page2.html'; return false;" <!-- Redireciona após o envio -->
+        >
+          <!-- Campos de Criação de Conta / Login -->
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="password" name="password" placeholder="password" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
