@@ -103,16 +103,33 @@
     let coursesHTML = '';
     let podcastsHTML = '';
     let videosHTML = '';
-
     if (area === 'juridico') {
         coursesHTML = `
             <a href="https://www.coursera.org/search?query=juridico" target="_blank">Direito Empresarial - Coursera</a>
             <a href="https://www.udemy.com/courses/search/?src=ukw&q=juridico" target="_blank">Gestão de Contratos - Udemy</a>
         `;
+    } else if (area === 'marketing') {
+        coursesHTML = `
+            <a href="https://www.coursera.org/search?query=marketing" target="_blank">Marketing Digital - Coursera</a>
+            <a href="https://www.udemy.com/courses/search/?src=ukw&q=marketing" target="_blank">Estratégias de Marketing - Udemy</a>
+        `;
+    } else if (area === 'vendas') {
+        coursesHTML = `
+            <a href="https://www.coursera.org/search?query=vendas" target="_blank">Técnicas de Vendas - Coursera</a>
+            <a href="https://www.udemy.com/courses/search/?src=ukw&q=vendas" target="_blank">Gestão de Vendas - Udemy</a>
+        `;
+    } else if (area === 'tecnologia') {
+        coursesHTML = `
+            <a href="https://www.coursera.org/search?query=tecnologia" target="_blank">Introdução à TI - Coursera</a>
+            <a href="https://www.udemy.com/courses/search/?src=ukw&q=tecnologia" target="_blank">Desenvolvimento Web - Udemy</a>
+        `;
+    } else if (area === 'saude') {
+        coursesHTML = `
+            <a href="https://www.coursera.org/search?query=saude" target="_blank">Saúde e Segurança no Trabalho - Coursera</a>
+            <a href="https://www.udemy.com/courses/search/?src=ukw&q=saude" target="_blank">Primeiros Socorros - Udemy</a>
+        `;
     }
-    // Adicione os outros cases para marketing, vendas, etc. como já feito.
-
-    // Podem ser carregados os links de podcasts e vídeos da mesma maneira.
+  
     podcastsHTML = `<a href="https://open.spotify.com/search/${area}" target="_blank">Podcasts sobre ${area}</a>`;
     videosHTML = `<a href="https://www.youtube.com/results?search_query=${area}" target="_blank">Vídeo-aulas sobre ${area}</a>`;
 
