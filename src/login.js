@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar sua lógica de autenticação
+    
     if (username === 'admin' && password === '1234') {
       navigate('/page2');
     } else {
